@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang=”en”>
+    <Head>
+        <meta charset="utf-8">
+        <title>My Portfolio</title>
+        <link rel="icon" type="image/png" href="image/favicon.png"> 
+    </head>
+    <body>
+        
+        <h1>Contact page</h1>
+        <fieldset>
+        <p class="p-welcome">Name: Samuel Reda</p>
+        <p class="p-welcome">Email: myEmail@ucsd.edu</p>
+
+        <!--<a href="index.html">Return to Home page</a> -->
+
+        <form action="index.html" method="post">
+            <p></p>
+            <label>Your Name:</label>
+            <input type="text" name="" value=""><br>
+            <label>Your email:</label>
+            <input type="text" name="" value=""><br><br>
+            <label>Please select the date that you prefer to be contacted</label><br>
+            <input type="date" id="start" name="trip-start"><br><br>
+
+
+            <label for="branch-choice">Choose a branch:</label>
+            <input list="branch locations" id="branch-choice" name="branch-choice" /><br>
+
+            <datalist id="branch locations">
+                <option value="none">
+                <option value="UCSD">
+                <option value="UCI">
+                <option value="UCB">
+                <option value="UCSC">
+                <option value="UCD">
+            </datalist>
+
+            <p>Do you want us to save your information for your next visit? <br/>
+
+            <select>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select> <br> <br>
+
+
+            <label>Do you want an automated reply?</label>
+            <input type="checkbox" name="" value=""><br>
+            <input type="submit" name=""><br>
+
+            <p>Would you recommend us to others?</p>
+            <div>
+                <input type="radio" id="yes" name="drone" value="yes">
+                <label for="yes">Yes</label>
+            </div>
+            <div>
+                <input type="radio" id="no" name="drone" value="no">
+                <label for="no">No</label>
+            </div> <br>
+
+            <label for="story">Please suggest how we could improve our service:</label> <br>
+
+            <textarea id="story" name="story" rows="5" cols="33"> </textarea>
+            <form action=""></form>
+        </form>
+        </fieldset>
+
+        <button class="favorite styled"
+                type="button">
+            <a href="index.html">Return to Home page</a>
+        </button>
+
+    </body>
+</html>
